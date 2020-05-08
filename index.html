@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Online BCP-47 Tester & Normalizer</title>
+  <link href='https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,600&display=swap' rel='stylesheet'>
+  <link rel='stylesheet' href='./style.stylus'>
+  <link href='node_modules/prismjs/themes/prism-solarizedlight.css' rel='stylesheet' />
+</head>
+<body>
+  <h1><a href='https://tools.ietf.org/html/bcp47' target='_blank'>BCP-47</a> <a href='https://github.com/antfu/bcp47-test' target='_blank' style='font-weight:normal'>Tester & Normalizer</a></h1>
+
+  <input id='input' type='text' value='zh-cn' placeholder='Enter a locale code'/>
+
+  <div class='table'>
+    <section>
+      <label><a href='https://github.com/wooorm/bcp-47-normalize' target='_blank'>Normalized</a></label>
+      <pre id='normalized'></pre>
+    </section>
+    <section>
+      <label><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/getCanonicalLocales' target='_blank'>Intl.getCanonicalLocales</a></label>
+      <pre id='intl'></pre>
+    </section>
+    <section>
+      <label>Normalized+Intl.getCanonicalLocales</label>
+      <pre id='normalizedIntl'></pre>
+    </section>
+    <section>
+      <label><a href='https://github.com/wooorm/bcp-47' target='_blank'>Parsed</a></label>
+      <pre id='parsed'></pre>
+    </section>
+    <section>
+      <label>Normalized+Parsed</label>
+      <pre id='normalizedInfo'></pre>
+    </section>
+  </div>
+
+  <script src='./index.js'></script>
+</body>
+</html>

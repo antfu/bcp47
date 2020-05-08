@@ -1,0 +1,33 @@
+body
+  margin 0
+  padding 3rem
+
+html, input, h1, h2, textarea
+  font-family 'IBM Plex Mono', monospace
+
+pre
+  white-space break-spaces
+
+input
+  outline 0
+  font-size 1.2rem
+  border 0.5px solid #5f9ea0
+  padding 0.2rem 0.5rem 0.5rem 0.5rem
+  width 100%
+  margin-bottom 3rem
+  
+.table
+  display grid
+  grid-template-columns 1fr 1fr 1fr
+  grid-gap 0.8rem
+
+  label
+    font-weight bold
+    color #777
+
+a
+  color #5f9ea0
+  text-decoration: none
+
+  &:hover
+    text-decoration: underline
